@@ -1,6 +1,6 @@
 from typing import Optional
 import PySide6.QtCore
-from PySide6.QtWidgets import (QApplication, QLabel, QMainWindow, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QMainWindow, QVBoxLayout, QWidget)
 
 class MainWindow(QMainWindow):
     def __init__(self, parent: QWidget | None = None, *args, **kwargs) -> None:
@@ -8,8 +8,10 @@ class MainWindow(QMainWindow):
 
         # Layout config
         self.cw = QWidget()
-        self.v_layout = QVBoxLayout()
-        self.cw.setLayout(self.v_layout)
+
+        # camelCase
+        self.vLayout = QVBoxLayout()
+        self.cw.setLayout(self.vLayout)
         self.setCentralWidget(self.cw)
 
         # Window title
@@ -17,7 +19,7 @@ class MainWindow(QMainWindow):
 
     def addWidgetToVLayout(self, widget: QWidget):
         # Add widget
-        self.v_layout.addWidget(widget)
+        self.vLayout.addWidget(widget)
 
     def adjustFixedSize(self):
         # Last thing to do
