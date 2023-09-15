@@ -10,16 +10,15 @@ class MainWindow(QMainWindow):
         self.cw = QWidget()
         self.v_layout = QVBoxLayout()
         self.cw.setLayout(self.v_layout)
-
-        self.label1 = QLabel("Texto :)")
-        self.v_layout.addChildWidget(self.label1)
-
         self.setCentralWidget(self.cw)
 
         # Window title
         self.setWindowTitle("Calculator")
 
-        
+    def addWidgetToVLayout(self, widget: QWidget):
+        # Add widget
+        self.v_layout.addWidget(widget)
+
     def adjustFixedSize(self):
         # Last thing to do
         self.adjustSize()
