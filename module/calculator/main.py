@@ -4,6 +4,7 @@ import sys
 from main_window import MainWindow
 from display import Display
 from info import Info
+from buttons import Button
 from variables import WINDOW_ICON_PATH
 from styles import setupTheme
 from PySide6.QtGui import QIcon
@@ -28,6 +29,10 @@ if __name__ == "__main__":
     display = Display()
     display.setPlaceholderText("0")
     window.addWidgetToVLayout(display)
+
+    # Button
+    button = Button("Button text")
+    window.addWidgetToVLayout(button)
 
     # Run
     window.adjustFixedSize()
