@@ -1,5 +1,5 @@
 from variables import MEDIUM_FONT_SIZE
-from utils import isNumOrDot, isEmpty
+from utils import isNumOrDot, isEmpty, isValidNumber
 from display import Display
 
 from PySide6.QtWidgets import QPushButton, QGridLayout
@@ -64,4 +64,14 @@ class ButtonsGrid(QGridLayout):
 
     def _insertButtonTextToDisplay(self, button):
         buttonText = button.text()
-        self.display.insert(buttonText)
+        newDisplayValue = self.display.text() + buttonText
+
+        if not isValidNumber(newDisplayValue):
+            return
+
+        if buttonText == "=":
+            self.display.setText()
+            print("Lets calculate")
+
+        else:
+            self.display.insert(buttonText)
