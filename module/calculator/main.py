@@ -4,7 +4,7 @@ import sys
 from main_window import MainWindow
 from display import Display
 from info import Info
-from buttons import Button
+from buttons import Button, ButtonsGrid
 from variables import WINDOW_ICON_PATH
 from styles import setupTheme
 from PySide6.QtGui import QIcon
@@ -24,15 +24,14 @@ if __name__ == "__main__":
     info = Info('2.0 ^ 10.0 = 1024')
     window.addWidgetToVLayout(info)
 
-
     # Display
     display = Display()
     display.setPlaceholderText("0")
     window.addWidgetToVLayout(display)
 
-    # Button
-    button = Button("Button text")
-    window.addWidgetToVLayout(button)
+    # Grid
+    buttonsGrid = ButtonsGrid()
+    window.vLayout.addLayout(buttonsGrid)
 
     # Run
     window.adjustFixedSize()
