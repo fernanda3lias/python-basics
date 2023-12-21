@@ -1,0 +1,7 @@
+Dear %name,
+
+We would like to inform you that your monthly fee of %{value} will be charged on %date. If you wish to cancel the service, please contact %company at the following telephone number: %phone.
+
+Sincerely,
+
+%company
