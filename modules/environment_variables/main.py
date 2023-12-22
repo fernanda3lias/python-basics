@@ -1,4 +1,4 @@
-# Environment variables with Python
+# Environment variables using Python
 # doc: https://pypi.org/project/python-dotenv/
 # Never send your .env file to a remote repo
 # Always create .env-example
