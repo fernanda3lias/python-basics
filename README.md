@@ -5,12 +5,13 @@ I created this repository as a personal archive for my Python learning files, ma
 
 - `calculator`: Creating a calculator from scratch using PySide6 - GUI with QT6
 
-<center><img src="GUI/calculator/example.png" alt="calculator example" text-align='justified' width="300" height="400"/>
+<center><img src="GUI/calculator/example.png" alt="calculator example" width="300" height="400"/>
 </center>
 
 <h2>modules</h2>
 
-- `web_scraping`:
+<p>🚧 under development 🚧</p>
+<!-- - `web_scraping`:
 - `http_requests`:
 - `managing_pdfs`:
 - `sending_emails`:
@@ -18,7 +19,7 @@ I created this repository as a personal archive for my Python learning files, ma
 - `external_commands`:
 - `excel_spreadsheet`:
 - `template_substitutor`:
-- `environment_variables`:
+- `environment_variables`: -->
 
 <h2>Thank you very much!</h2>
 
