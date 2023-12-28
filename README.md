@@ -7,7 +7,7 @@ The following topics will be covered in each folder:
 * `GUI`: Graphical interface using PySide6 and QT6
 * `OOP`: Object-oriented programming
 * `modules`: Useful Python modules
-
+* `datarepo`: Databases using Python
 
 
 <h2>Thank you very much!</h2>
