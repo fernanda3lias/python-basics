@@ -8,6 +8,7 @@ The following topics will be covered in each folder:
 * `OOP`: Object-oriented programming
 * `modules`: Useful Python modules
 * `datarepo`: Databases using Python
+* `type_annottations`: Data type hints
 
 
 <h2>Thank you very much!</h2>
